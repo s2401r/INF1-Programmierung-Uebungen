@@ -1,26 +1,26 @@
 public class Gegenstand {
 
-    private int gewicht;
+private int gewicht;
 
-    private String material;
+private String material;
 
-    private boolean elektrisch;
+private boolean elektrisch;
 
-    public Gegenstand(int gewicht, String material, boolean elektrisch) {
+public Gegenstand(int gewicht, String material, boolean elektrisch) {
         this.gewicht = gewicht;
         this.material = material;
         this.elektrisch = elektrisch;
-    }
+}
 
-    public int getGewicht() {
+public int getGewicht() {
         return gewicht;
-    }
+}
 
-    public String getMaterial() {
+public String getMaterial() {
         return material;
-    }
+}
 
-    public boolean isElektrisch() {
+public boolean isElektrisch() {
         return elektrisch;
-    }
+}
 }
