@@ -15,9 +15,21 @@ public class SchleifeTest {
 
         System.out.println("Maximalwert: " + schleife.max(maxArray));
 
+        int[] sameArray = new int[]{5, 5, 5, 5};
+
+        System.out.println("Maximalwert: " + schleife.max(sameArray));
+
+        int[] maxnegArray = new int[]{-17, -4, -10, -15};
+
+        System.out.println("Maximalwert: " + schleife.max(maxnegArray));
+
 
         int[] doubleArray = new int[]{5, 1, 7, 2, 8, 4, 3, 7, 9};
 
         System.out.println("Doppelwert: " + schleife.hasDoppelte(doubleArray));
+
+        int[] notdoubleArray = new int[]{5, 1, 7, 2, 8, 4, 3, 6, 9};
+
+        System.out.println("Doppelwert: " + schleife.hasDoppelte(notdoubleArray));
     }
 }

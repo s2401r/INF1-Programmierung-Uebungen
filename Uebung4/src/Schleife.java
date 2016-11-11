@@ -43,9 +43,9 @@ public class Schleife {
     //Wenn array mind. eine Zahl doppelt enthalt -> true; andernfalls false
     public boolean hasDoppelte(int[] array) {
         if (array != null) {
-            for (int i : array) {
-                for (int j : array) {
-                    if (array[i] == array[j]) {
+            for (int i = 0; i < array.length; i++) {
+                for (int j =0; j < array.length; j++) {
+                    if (i != j && array[i] == array[j]) {
                         return true;
                     }
                 }
