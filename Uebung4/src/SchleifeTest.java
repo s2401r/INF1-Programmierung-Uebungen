@@ -31,5 +31,10 @@ public class SchleifeTest {
         int[] notdoubleArray = new int[]{5, 1, 7, 2, 8, 4, 3, 6, 9};
 
         System.out.println("Doppelwert: " + schleife.hasDoppelte(notdoubleArray));
+
+
+
+        System.out.println(Integer.toBinaryString(-3>>>5) + "    " + (-3 >>>5));
+        System.out.println((byte) Integer.parseInt("1001",2));
     }
 }
