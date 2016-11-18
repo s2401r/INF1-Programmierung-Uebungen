@@ -1,13 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Tobias on 15/11/2016.
  */
 public class SozialesNetzwerk {
     public Person[] getFreundschaftskette(Person start, Person ende) {
         Person[] result = new Person[6];
-        getNearestFriend(start, ende);
+        getFriendMapForTarget(start, ende);
         return null;
     }
 
+    /*
     private Person[] getFreundschaftskette(Person[] result, Person start, Person ende) {
         if (start.isFriendWith(ende)) {
             Person[] tempResult = saveNextPersonInArray(result, start);
@@ -46,25 +50,20 @@ public class SozialesNetzwerk {
             throw new IllegalArgumentException("result is null");
         }
     }
+    */
 
+    private Map<Person, Integer> getFriendMapForTarget(final Person start, final Person end) {
+        Map<Person, Integer> result = new HashMap<Person, Integer>();
 
-    private int getNearestFriend(Person start, Person ende) {
-        if (start.isFriendWith(ende)) {
-            return 1;
+        if (start.isFriendWith(end)) {
+            result.put(end, 0);
+            result.put(start, 1);
         } else {
-            int nearestFriendCount = 0;
-            Person nearestFriendHop = null;
-
-            for (Person person : start.getFreunde()) {
-                int result = getNearestFriend(person, ende);
-                if (result > 0) {
-                    if (result > nearestFriendCount) {
-                        nearestFriendCount = result;
-                        nearestFriendHop = person;
-                    }
-                }
+            for (final Person p : start.getFreunde()) {
+                result.putAll(getFriendMapForTarget(p, end));
             }
-            return nearestFriendCount;
         }
+
+        return result;
     }
 }
