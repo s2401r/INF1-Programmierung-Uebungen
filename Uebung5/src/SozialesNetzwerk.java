@@ -1,7 +1,17 @@
 import java.util.ArrayList;
 
+/**
+ * @author Name: <a href="mailto:t_hoge03@wwu.de">Tobias Hoge</a>, Matrikelnummer: 439 224
+ */
 public class SozialesNetzwerk {
 
+    /**
+     * Gets the shortest path between two persons
+     *
+     * @param start The person where the path starts
+     * @param ende  The person where the path ends
+     * @return The shortest path between two persons
+     */
     public Person[] getFreundeskette(Person start, Person ende) {
 
         ArrayList<Person> besucht = new ArrayList<Person>();
@@ -10,6 +20,15 @@ public class SozialesNetzwerk {
         return getShortestFriendPath(wege, besucht, start, ende);
     }
 
+    /**
+     * Gets the shortest path between two persons
+     *
+     * @param paths                 ArrayList which contains all possible paths
+     * @param alreadyCheckedPersons ArrayList which contains all already checked persons
+     * @param start                 The person where the path starts
+     * @param end                   The person where the path ends
+     * @return The shortest path between two persons
+     */
     public Person[] getShortestFriendPath(ArrayList<Person[]> paths, ArrayList<Person> alreadyCheckedPersons, Person start, Person end) {
         if (paths.isEmpty()) {
             paths.add(new Person[6]);
@@ -17,47 +36,58 @@ public class SozialesNetzwerk {
 
         Person[] result = paths.get(getShortestPathOutOfArrayList(paths));
         paths.remove(getShortestPathOutOfArrayList(paths));
-        int indexOfLastElementinResultArray = getIndexOfLastElementInArray(result);
-
+        int indexOfLastElementInResultArray = getIndexOfLastElementInArray(result);
 
         for (int i = 0; i < start.getFreunde().length; i++) {
             if (start.getFreunde()[i].equals(end)) {
-                result[indexOfLastElementinResultArray + 1] = end;
+                result[indexOfLastElementInResultArray + 1] = end;
                 return result;
             }
 
             if (!(alreadyCheckedPersons.contains(start.getFreunde()[i])) && (start.getFreunde()[i] != null)) {
-
                 Person[] temp = result.clone();
-                temp[indexOfLastElementinResultArray + 1] = start.getFreunde()[i];
+                temp[indexOfLastElementInResultArray + 1] = start.getFreunde()[i];
                 paths.add(temp);
                 alreadyCheckedPersons.add(start.getFreunde()[i]);
             }
-
         }
 
         int indexOfShortestPath = getShortestPathOutOfArrayList(paths);
         return getShortestFriendPath(paths, alreadyCheckedPersons, paths.get(indexOfShortestPath)[getIndexOfLastElementInArray(paths.get(indexOfShortestPath))], end);
     }
 
+    /**
+     * Gets the index of the last element in an array
+     *
+     * @param array The array which will be used
+     * @return The index of the last element in an array
+     */
     public int getIndexOfLastElementInArray(Person[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == null) return i - 1;
+            if (array[i] == null) {
+                return i - 1;
+            }
         }
         return 5;
     }
 
+    /**
+     * Gets the index of an array with fewest entries out of an arraylist filled with arrays
+     *
+     * @param paths The ArrayList filled with arrays which will be used
+     * @return The index of an array with fewest entries
+     */
     public int getShortestPathOutOfArrayList(ArrayList<Person[]> paths) {
 
-        int min = 7;
-        int minpos = 0;
+        int minCount = 7;
+        int minCountIndex = 0;
         for (Person[] path : paths) {
-            if (getIndexOfLastElementinArray(path) < min) {
-                minpos = paths.indexOf(path);
-                min = getIndexOfLastElementinArray(path);
+            if (getIndexOfLastElementInArray(path) < minCount) {
+                minCountIndex = paths.indexOf(path);
+                minCount = getIndexOfLastElementInArray(path);
             }
         }
-        return minpos;
+        return minCountIndex;
     }
 }
 
