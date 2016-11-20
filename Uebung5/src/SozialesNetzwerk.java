@@ -1,69 +1,65 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
-/**
- * Created by Tobias on 15/11/2016.
- */
 public class SozialesNetzwerk {
-    public Person[] getFreundschaftskette(Person start, Person ende) {
-        Person[] result = new Person[6];
-        getFriendMapForTarget(start, ende);
-        return null;
+
+    public Person[] getFreundeskette(Person start, Person ende) {
+
+        ArrayList<Person> besucht = new ArrayList<Person>();
+        ArrayList<Person[]> wege = new ArrayList<Person[]>();
+
+        return getShortestFriendPath(wege, besucht, start, ende);
     }
 
-    /*
-    private Person[] getFreundschaftskette(Person[] result, Person start, Person ende) {
-        if (start.isFriendWith(ende)) {
-            Person[] tempResult = saveNextPersonInArray(result, start);
-            tempResult = saveNextPersonInArray(result, ende);
-            return tempResult;
-        } else {
-            for (Person person : start.getFreunde()) {
-                if (person.isFriendWith(ende)) {
-                    Person[] tempResult = saveNextPersonInArray(result, person);
-                    tempResult = saveNextPersonInArray(result, ende);
-                    return tempResult;
-                }
-            }
-
-            for (Person person : start.getFreunde()) {
-                Person[] tempResult = getFreundschaftskette(result, person, ende);
-                return tempResult;
-            }
-
-            return null;
+    public Person[] getShortestFriendPath(ArrayList<Person[]> paths, ArrayList<Person> alreadyCheckedPersons, Person start, Person end) {
+        if (paths.isEmpty()) {
+            paths.add(new Person[6]);
         }
 
+        Person[] result = paths.get(getShortestPathOutOfArrayList(paths));
+        paths.remove(getShortestPathOutOfArrayList(paths));
+        int indexOfLastElementinResultArray = getIndexOfLastElementInArray(result);
+
+
+        for (int i = 0; i < start.getFreunde().length; i++) {
+            if (start.getFreunde()[i].equals(end)) {
+                result[indexOfLastElementinResultArray + 1] = end;
+                return result;
+            }
+
+            if (!(alreadyCheckedPersons.contains(start.getFreunde()[i])) && (start.getFreunde()[i] != null)) {
+
+                Person[] temp = result.clone();
+                temp[indexOfLastElementinResultArray + 1] = start.getFreunde()[i];
+                paths.add(temp);
+                alreadyCheckedPersons.add(start.getFreunde()[i]);
+            }
+
+        }
+
+        int indexOfShortestPath = getShortestPathOutOfArrayList(paths);
+        return getShortestFriendPath(paths, alreadyCheckedPersons, paths.get(indexOfShortestPath)[getIndexOfLastElementInArray(paths.get(indexOfShortestPath))], end);
     }
 
-    private Person[] saveNextPersonInArray(Person[] result, Person toSave) throws IllegalArgumentException {
-        if (result != null) {
-            for (int i = 0; i < result.length; i++) {
-                if (result[i] == null) {
-                    result[i] = toSave;
-
-                    return result;
-                }
-            }
-            return result;
-        } else {
-            throw new IllegalArgumentException("result is null");
+    public int getIndexOfLastElementInArray(Person[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == null) return i - 1;
         }
+        return 5;
     }
-    */
 
-    private Map<Person, Integer> getFriendMapForTarget(final Person start, final Person end) {
-        Map<Person, Integer> result = new HashMap<Person, Integer>();
+    public int getShortestPathOutOfArrayList(ArrayList<Person[]> paths) {
 
-        if (start.isFriendWith(end)) {
-            result.put(end, 0);
-            result.put(start, 1);
-        } else {
-            for (final Person p : start.getFreunde()) {
-                result.putAll(getFriendMapForTarget(p, end));
+        int min = 7;
+        int minpos = 0;
+        for (Person[] path : paths) {
+            if (getIndexOfLastElementinArray(path) < min) {
+                minpos = paths.indexOf(path);
+                min = getIndexOfLastElementinArray(path);
             }
         }
-
-        return result;
+        return minpos;
     }
 }
+
+
+

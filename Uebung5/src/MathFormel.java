@@ -26,9 +26,9 @@ public class MathFormel {
         double result = 0;
 
         if (i % 2 == 0) {
-            tempResult = nominator(x, 2 * i + 1) / denominator(2 * i + 1);
+            tempResult = numerator(x, 2 * i + 1) / denominator(2 * i + 1);
         } else {
-            tempResult = -1 * nominator(x, 2 * i + 1) / denominator(2 * i + 1);
+            tempResult = -1 * numerator(x, 2 * i + 1) / denominator(2 * i + 1);
         }
 
         if (tempResult < -0.0000001 || tempResult > 0.0000001) {
@@ -38,6 +38,34 @@ public class MathFormel {
         return result;
     }
 
+    /**
+     * Calculates the numerator value for given x and i for sinus function
+     *
+     * @param x The value for sinus calculation
+     * @param i The iterator value for sinus calculation
+     * @return Calculated numerator value
+     */
+    public double numerator(double x, int i) {
+        double result = 1;
+        if (i > 0) {
+            result = numerator(x, i - 1) * x;
+        }
+        return result;
+    }
+
+    /**
+     * Calculates the denominator value i for sinus function
+     *
+     * @param i The iterator value for sinus calculation
+     * @return Calculated denominator value
+     */
+    public double denominator(int i) {
+        double result = 1;
+        if (i > 0) {
+            result = denominator(i - 1) * i;
+        }
+        return result;
+    }
 
     /**
      * Calculates the sinus function with the help of loops
@@ -80,23 +108,5 @@ public class MathFormel {
         }
         while (!(tempResult > -0.0000001 && tempResult < 0.0000001));
         return result;
-    }
-
-
-    public double nominator(double x, int i) {
-        double result = 1;
-        if (i > 0) {
-            result = nominator(x, i - 1) * x;
-        }
-        return result;
-    }
-
-    public double denominator(int i) {
-        double result = 1;
-        if (i > 0) {
-            result = denominator(i - 1) * i;
-        }
-        return result;
-
     }
 }

@@ -25,39 +25,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SchleifenTypen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SchleifenTypen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="method#b_for#0;class#SchleifenTypen#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SozialesNetzwerk.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SozialesNetzwerk.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SozialesNetzwerk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
+            <state relative-caret-position="494">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1805#1822#0" expanded="true" />
+                <element signature="method#getFreundeskette#0;class#SozialesNetzwerk#0" expanded="false" />
+                <element signature="e#178#186#0" expanded="true" />
+                <element signature="e#238#248#0" expanded="true" />
+                <element signature="method#getIndexOfLastElementInArray#0;class#SozialesNetzwerk#0" expanded="false" />
+                <element signature="method#getShortestPathOutOfArrayList#0;class#SozialesNetzwerk#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathFormel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathFormel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MathFormel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="267">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
+                <element signature="method#getSine#0;class#MathFormel#0" expanded="false" />
+                <element signature="method#numerator#0;class#MathFormel#0" expanded="false" />
+                <element signature="method#denominator#0;class#MathFormel#0" expanded="false" />
                 <element signature="method#loeseSchleife#0;class#MathFormel#0" expanded="false" />
               </folding>
             </state>
@@ -67,12 +69,12 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="274">
+              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
               <folding>
-                <marker date="1479653329000" expanded="false" signature="2388:2492" ph="{...}" />
-                <marker date="1479653329000" expanded="false" signature="2564:2913" ph="{...}" />
-                <marker date="1479653329000" expanded="false" signature="2961:3459" ph="{...}" />
+                <marker date="1479671661000" expanded="false" signature="2738:2842" ph="{...}" />
+                <marker date="1479671661000" expanded="false" signature="2910:3259" ph="{...}" />
+                <marker date="1479671661000" expanded="false" signature="3300:3798" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -96,10 +98,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/SchleifenTypenTest.java" />
-        <option value="$PROJECT_DIR$/src/SozialesNetzwerk.java" />
         <option value="$PROJECT_DIR$/src/SchleifenTypen.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/MathFormel.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/SozialesNetzwerk.java" />
       </list>
     </option>
   </component>
@@ -502,17 +504,17 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -557,33 +559,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SozialesNetzwerk.java</url>
-          <line>20</line>
           <properties />
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SozialesNetzwerk.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SozialesNetzwerk.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SozialesNetzwerk.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="67" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -607,27 +590,11 @@
         <state relative-caret-position="195">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1805#1822#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SozialesNetzwerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1805#1822#0" expanded="true" />
+            <element signature="method#getFreundeskette#0;class#SozialesNetzwerk#0" expanded="false" />
+            <element signature="e#178#186#0" expanded="true" />
+            <element signature="e#238#248#0" expanded="true" />
+            <element signature="method#getIndexOfLastElementInArray#0;class#SozialesNetzwerk#0" expanded="false" />
+            <element signature="method#getShortestPathOutOfArrayList#0;class#SozialesNetzwerk#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -642,26 +609,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/MathFormel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <marker date="1479653329000" expanded="false" signature="2388:2492" ph="{...}" />
-            <marker date="1479653329000" expanded="false" signature="2564:2913" ph="{...}" />
-            <marker date="1479653329000" expanded="false" signature="2961:3459" ph="{...}" />
+            <element signature="method#getSine#0;class#MathFormel#0" expanded="false" />
+            <element signature="method#numerator#0;class#MathFormel#0" expanded="false" />
+            <element signature="method#denominator#0;class#MathFormel#0" expanded="false" />
+            <element signature="method#loeseSchleife#0;class#MathFormel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MathFormel.java">
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="451">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
           <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="method#loeseSchleife#0;class#MathFormel#0" expanded="false" />
+            <marker date="1479671661000" expanded="false" signature="2738:2842" ph="{...}" />
+            <marker date="1479671661000" expanded="false" signature="2910:3259" ph="{...}" />
+            <marker date="1479671661000" expanded="false" signature="3300:3798" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SozialesNetzwerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="method#getFreundeskette#0;class#SozialesNetzwerk#0" expanded="false" />
+            <element signature="e#178#186#0" expanded="true" />
+            <element signature="e#238#248#0" expanded="true" />
+            <element signature="method#getIndexOfLastElementInArray#0;class#SozialesNetzwerk#0" expanded="false" />
+            <element signature="method#getShortestPathOutOfArrayList#0;class#SozialesNetzwerk#0" expanded="false" />
           </folding>
         </state>
       </provider>
