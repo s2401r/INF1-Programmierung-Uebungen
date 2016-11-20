@@ -30,7 +30,7 @@ public class Test {
         //System.out.println(MathFormel.exponentiation(25,-7));
 
         ///*
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10000; i++) {
 
             double result1 = Math.sin(i);
 
@@ -64,6 +64,60 @@ public class Test {
                 System.out.println("null");
             }
         }
-        */
+        //*/
     }
 }
+
+
+
+/*
+
+public static double factorial(double x) {
+    int result = 1;
+    for (int i = 1; i <= x; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+    public static double exponentiation(double base, double exponent) {
+        double result = 1;
+
+        if (exponent > 0) {
+            while (exponent > 0) {
+                result *= base;
+                exponent--;
+            }
+        } else if (exponent < 0) {
+            while (exponent < 0) {
+                result /= base;
+                exponent++;
+            }
+        }
+        return result;
+    }
+
+
+
+
+    public double getSine(double x, int i) {
+        double numerator = exponentiation(x, (2 * i) + 1);
+        double denominator = factorial((2 * i) + 1);
+        double multiplicand = exponentiation(-1, i);
+
+        double result = multiplicand * (numerator / denominator);
+
+        if (Double.isNaN(result)) {
+            return result;
+        }
+
+        if (result > exponentiation(-10, -7) && result < exponentiation(10, -7)) {
+            return result;
+        } else {
+            return getSine(x, i + 1) + result;
+        }
+    }
+
+
+
+ */

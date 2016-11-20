@@ -1,30 +1,50 @@
 /**
- * Created by Tobias on 15/11/2016.
+ * @author Name: <a href="mailto:t_hoge03@wwu.de">Tobias Hoge</a>, Matrikelnummer: 439 224
  */
-public class MathFormel {
 
+public class MathFormel {
+    /**
+     * Calculates the sinus function with the help of recursion
+     *
+     * @param x The value for sinus calculation
+     * @return Calculated sinus value
+     */
     public double loeseRekursiv(double x) {
         return getSine(x, 0);
     }
 
-    public double getSine(double x, double i) {
-        double numerator = exponentiation(x, (2 * i) + 1);
-        double denominator = factorial((2 * i) + 1);
-        double multiplicand = exponentiation(-1, i);
+    /**
+     * Calculates the sinus function with the help of recursion for given value
+     *
+     * @param x The value for sinus calculation
+     * @param i The iterator value for sinus calculation
+     * @return Calculated sinus value
+     */
+    public double getSine(double x, int i) {
 
-        double result = multiplicand * (numerator / denominator);
+        double tempResult;
+        double result = 0;
 
-        if (Double.isNaN(result)) {
-            return result;
-        }
-
-        if (result > exponentiation(-10, -7) && result < exponentiation(10, -7)) {
-            return result;
+        if (i % 2 == 0) {
+            tempResult = nominator(x, 2 * i + 1) / denominator(2 * i + 1);
         } else {
-            return getSine(x, i + 1) + result;
+            tempResult = -1 * nominator(x, 2 * i + 1) / denominator(2 * i + 1);
         }
+
+        if (tempResult < -0.0000001 || tempResult > 0.0000001) {
+            result = tempResult + getSine(x, i + 1);
+        }
+
+        return result;
     }
 
+
+    /**
+     * Calculates the sinus function with the help of loops
+     *
+     * @param x The value for sinus calculation
+     * @return Calculated sinus value
+     */
     public double loeseSchleife(double x) {
         double result = 0, tempResult = 0;
         int i = 0;
@@ -58,45 +78,25 @@ public class MathFormel {
             result += tempResult;
             i += 1;
         }
-        while (!(tempResult > exponentiation(-10, -7) && tempResult < exponentiation(10, -7)));
+        while (!(tempResult > -0.0000001 && tempResult < 0.0000001));
         return result;
     }
 
-    public static double factorial(double x) {
+
+    public double nominator(double x, int i) {
         double result = 1;
-        for (int i = 1; i <= x; i++) {
-            result *= i;
+        if (i > 0) {
+            result = nominator(x, i - 1) * x;
         }
         return result;
     }
 
-    public static double exponentiation(double base, double exponent) {
+    public double denominator(int i) {
         double result = 1;
-
-        if (exponent > 0) {
-            while (exponent > 0) {
-                result *= base;
-                exponent--;
-            }
-        } else if (exponent < 0) {
-            while (exponent < 0) {
-                result /= base;
-                exponent++;
-            }
+        if (i > 0) {
+            result = denominator(i - 1) * i;
         }
         return result;
 
-
-        /*
-        if (exponent > 0) {
-            double result = exponentiation(base, exponent - 1);
-            return base * result;
-        } else if (exponent < 0) {
-            double result = exponentiation(base, exponent + 1);
-            return result / base;
-        } else {
-            return 1;
-        }
-        */
     }
 }

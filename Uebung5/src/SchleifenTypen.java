@@ -75,10 +75,12 @@ public class SchleifenTypen {
     public static String b_doWhile(int x) {
         // Implementieren Sie b_while mit Hilfe einer Do-While-Schleife!
         String result = "";
-        do {
-            result += 0.0 / 0.0;
+        if (x > 0) {
+            do {
+                result += 0.0 / 0.0;
+            }
+            while (result.length() < x);
         }
-        while (result.length() < x);
         result += "Batman";
         return result;
     }
