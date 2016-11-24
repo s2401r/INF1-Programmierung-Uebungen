@@ -11,7 +11,7 @@ public class SimpleDatabase extends Frame {
     protected Label lbl_index = new Label("0");
     protected Button btn_next = new Button("Weiter");
 
-    protected TextField txt_content = new TextField("", 3);
+    protected TextField txt_content = new TextField("");
 
     protected Button btn_save = new Button("Speichern");
     protected Button btn_load = new Button("Laden");
@@ -37,6 +37,7 @@ public class SimpleDatabase extends Frame {
                 setLbl_index(pivot);
             }
         });
+        lbl_index.setAlignment(Label.CENTER);
         btn_next.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

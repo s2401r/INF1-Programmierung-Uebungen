@@ -69,7 +69,7 @@ public class List {
                 current = current.succ;
                 return val;
             } else {
-                return null;
+                return current.content;
             }
         }
     }
@@ -133,20 +133,42 @@ public class List {
      * andernfalls den Wert des geloeschten Elements.
      */
     public Object remove(int index) {
-        index--;
+
         ListIterator iter = iterator();
 
-        for (int i = 0; i < index - 1; i++) {
-            if (!iter.hasNext()) {
-                return false;
+        if (index <= 0) {
+            if (iter.hasNext()) {
+                head = iter.current.succ;
+                return iter.current;
             } else {
-                iter.next();
+                head = null;
+                return iter.current;
+            }
+        } else if (index > 0) {
+            for (int i = 0; i < index - 1; i++) {
+                if (!iter.hasNext()) {
+                    return null;
+                } else {
+                    iter.next();
+                }
+            }
+
+            if (iter.hasNext()) {
+                if (iter.current.succ != null) {
+                    if (iter.current.succ.succ != null) {
+                        iter.current.succ = iter.current.succ.succ;
+                        return iter.current.succ;
+                    } else {
+                        iter.current.succ = null;
+                        return iter.current.succ; //TODO: <-- return funktioniert nicht richtig !!
+                    }
+                }
+            } else {
+                return null;
             }
         }
 
-        iter.current.succ = iter.current.succ.succ;
-
-        return true;
+        return null;
     }
 
     /**

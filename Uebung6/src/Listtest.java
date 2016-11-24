@@ -6,13 +6,25 @@ public class Listtest {
         List list = new List();
 
         list.insertFirst("Test0");
-        list.insert(1,"Test1");
-        list.insert(2,"Test2");
-        list.insert(3,"Test3");
-        list.insert(4,"Test4");
-        list.insert(5,"Test5");
+        list.insert(0, "Test1");
+        list.insert(0, "Test2");
+        list.insert(0, "Test3");
+        list.insert(0, "Test4");
+        list.insert(0, "Test5");
+
+        List.ListIterator iterator = list.iterator();
+        do {
+            System.out.println(iterator.next());
+        } while (iterator.hasNext());
+        System.out.println(iterator.next());
 
         list.remove(0);
-        list.remove(4);
+        list.remove(3);
+
+        iterator = list.iterator();
+        do {
+            System.out.println(iterator.next());
+        } while (iterator.hasNext());
+        System.out.println(iterator.next());
     }
 }
