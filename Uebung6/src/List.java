@@ -162,7 +162,7 @@ public class List {
                     } else {
                         Object val = iter.current.succ.content;
                         iter.current.succ = null;
-                        return val; //TODO: <-- return funktioniert nicht richtig !!
+                        return val;
                     }
                 }
             } else {
