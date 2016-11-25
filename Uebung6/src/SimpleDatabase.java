@@ -1,10 +1,11 @@
-/**
- * Created by Tobias on 23/11/2016.
- */
-
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * @author Name: <a href="mailto:t_hoge03@uni-muenster.de">Tobias Hoge</a>, Matrikelnummer: 439 224
+ * @author Name: <a href="mailto:a_mutz01@uni-muenster.de">Ann-Cathrin Mutz</a>, Matrikelnummer: 438 871
+ * @author Name: <a href="mailto:f_inge03@uni-muenster.de">Fabian Ingenhorst</a>, Matrikelnummer: 441 378
+ */
 public class SimpleDatabase extends Frame {
 
     protected Button btn_last = new Button("Zurück");
@@ -20,6 +21,11 @@ public class SimpleDatabase extends Frame {
     private String[] databaseObject = new String[10];
     private int pivot = 0;
 
+    /**
+     * Constructor
+     * <p>
+     * Sets up the window and the controls. Adds the ActionListeners for ButtonClick and WindowClosing.
+     */
     public SimpleDatabase() {
         setBounds(400, 400, 250, 300);
         setLayout(new GridBagLayout());
@@ -92,18 +98,33 @@ public class SimpleDatabase extends Frame {
         setVisible(true);
     }
 
-    class SimpleDatabaseWindowListener extends WindowAdapter {
+    /**
+     * Class which holds the eventhandler, who handles the click on the x
+     */
+    private class SimpleDatabaseWindowListener extends WindowAdapter {
         public void windowClosing(WindowEvent e) {
             e.getWindow().dispose();
             System.exit(0);
         }
     }
 
+    /**
+     * @param args
+     */
     static public void main(String[] args) {
         new SimpleDatabase();
     }
 
-    private static void put(Container ctr, Component comp, int x, int y, int w) {
+    /**
+     * Adds the given control to the gridBagLayout of the control at given positions.
+     *
+     * @param ctr  The container to which the element will be added
+     * @param comp The component which will be added
+     * @param x    The x value of the position where the control will be added
+     * @param y    The y value of the position where the control will be added
+     * @param w    The width of the control which will be added
+     */
+    private void put(Container ctr, Component comp, int x, int y, int w) {
         GridBagLayout g = (GridBagLayout) ctr.getLayout();
         GridBagConstraints c = new GridBagConstraints();
         c.fill = GridBagConstraints.BOTH;
@@ -117,6 +138,11 @@ public class SimpleDatabase extends Frame {
         g.setConstraints(comp, c);
     }
 
+    /**
+     * Sets the label that shows the index of database to given number
+     *
+     * @param number Number that will be displayed by index-label of database
+     */
     private void setLbl_index(int number) {
         StringBuilder sb = new StringBuilder();
         sb.append(number);

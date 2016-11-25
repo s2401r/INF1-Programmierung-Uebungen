@@ -6,11 +6,19 @@ public class Listtest {
         List list = new List();
 
         list.insertFirst("Test0");
-        list.insert(0, "Test1");
-        list.insert(0, "Test2");
-        list.insert(0, "Test3");
-        list.insert(0, "Test4");
-        list.insert(0, "Test5");
+
+        System.out.println("--------------------------------");
+        System.out.println("INSERT");
+        System.out.println("--------------------------------");
+        System.out.println(list.insert(0, "Test1"));
+        System.out.println(list.insert(1, "Test2"));
+        System.out.println(list.insert(2, "Test3"));
+        System.out.println(list.insert(3, "Test4"));
+        System.out.println(list.insert(4, "Test5"));
+
+        System.out.println("--------------------------------");
+        System.out.println("ITERATOR");
+        System.out.println("--------------------------------");
 
         List.ListIterator iterator = list.iterator();
         do {
@@ -18,8 +26,20 @@ public class Listtest {
         } while (iterator.hasNext());
         System.out.println(iterator.next());
 
-        list.remove(0);
-        list.remove(3);
+
+        System.out.println("--------------------------------");
+        System.out.println("REMOVE");
+        System.out.println("--------------------------------");
+
+        System.out.println(list.remove(0));
+        System.out.println(list.remove(4));
+        System.out.println(list.remove(0));
+        System.out.println(list.remove(1));
+
+
+        System.out.println("--------------------------------");
+        System.out.println("ITERATOR");
+        System.out.println("--------------------------------");
 
         iterator = list.iterator();
         do {

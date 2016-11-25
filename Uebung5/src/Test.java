@@ -4,7 +4,7 @@
 public class Test {
     public static void main(String[] args) {
 
-        /*
+        ///*
         for (int i = 0; i < 10; i++) {
             System.out.println("für " + i);
             System.out.println("a)  dowhile: " + SchleifenTypen.a_doWhile(i));
@@ -14,7 +14,7 @@ public class Test {
         }
         //*/
 
-        /*
+        ///*
         for (int i = 0; i < 10; i++) {
 
             System.out.println("für " + i);
@@ -46,7 +46,7 @@ public class Test {
         }
         //*/
 
-        ///*
+        /*
         Person stephan = new Person("Stephan", new Person[0]);
         Person tobias = new Person("Tobias", new Person[]{stephan});
         Person max = new Person("Max", new Person[0]);

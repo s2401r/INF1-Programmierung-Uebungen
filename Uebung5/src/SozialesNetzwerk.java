@@ -92,4 +92,36 @@ public class SozialesNetzwerk {
 }
 
 
+public class SocialNetworkLösung {
 
+    public int bestsolution = 6;
+    public Person[] freundeskette;
+
+    public static void main(String[] args) {
+
+    }
+
+
+    public Person[] getFreundschaftskette(Person start, Person ende) {
+    }
+
+    private boolean findPerson(Person start, Person ende, int depth) {
+        boolean found = false;
+        if (depth < bestsolution) {
+            for (Person p : start.getFreunde()) {
+                if (ende.equals(p) && depth < bestsolution) {
+                    bestsolution = depth;
+                    freundeskette = new Person[6];
+                    freundeskette[depth] = p;
+                    found = true;
+                    break;
+                }
+                if (findPerson(p, ende, depth + 1)) {
+                    freundeskette[depth] = p;
+                    found = true;
+                }
+            }
+        }
+        return found;
+    }
+}

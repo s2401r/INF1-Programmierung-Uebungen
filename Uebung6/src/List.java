@@ -139,10 +139,10 @@ public class List {
         if (index <= 0) {
             if (iter.hasNext()) {
                 head = iter.current.succ;
-                return iter.current;
+                return iter.current.content;
             } else {
                 head = null;
-                return iter.current;
+                return iter.current.content;
             }
         } else if (index > 0) {
             for (int i = 0; i < index - 1; i++) {
@@ -156,11 +156,13 @@ public class List {
             if (iter.hasNext()) {
                 if (iter.current.succ != null) {
                     if (iter.current.succ.succ != null) {
+                        Object val = iter.current.succ.content;
                         iter.current.succ = iter.current.succ.succ;
-                        return iter.current.succ;
+                        return val;
                     } else {
+                        Object val = iter.current.succ.content;
                         iter.current.succ = null;
-                        return iter.current.succ; //TODO: <-- return funktioniert nicht richtig !!
+                        return val; //TODO: <-- return funktioniert nicht richtig !!
                     }
                 }
             } else {
