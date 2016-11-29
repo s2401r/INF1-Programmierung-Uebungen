@@ -13,8 +13,8 @@ public class Listtest {
         System.out.println(list.insert(0, "Test1"));
         System.out.println(list.insert(1, "Test2"));
         System.out.println(list.insert(2, "Test3"));
-        System.out.println(list.insert(3, "Test4"));
-        System.out.println(list.insert(4, "Test5"));
+        System.out.println(list.insert(1, "Test4"));
+        System.out.println(list.insert(3, "Test5"));
 
         System.out.println("--------------------------------");
         System.out.println("ITERATOR");

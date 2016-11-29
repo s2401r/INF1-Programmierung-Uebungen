@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="d1c00dcc-db49-491c-b393-14a9720c6510" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Loesung Aufgabe 16.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Addition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Aufgabe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Berechenbar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Summe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Zahl.java" />
+    <list default="true" id="7e2a9f04-2d71-47d8-9ce6-f04bd1438808" name="CommitLater" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addition.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Aufgabe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Berechenbar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Summe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Zahl.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/List.java" afterPath="$PROJECT_DIR$/src/List.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listtest.java" afterPath="$PROJECT_DIR$/src/Listtest.java" />
     </list>
-    <list default="true" id="7e2a9f04-2d71-47d8-9ce6-f04bd1438808" name="CommitLater" comment="" />
     <ignored path="Uebung6.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,14 +33,10 @@
       <file leaf-file-name="SimpleDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="30">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <element signature="e#1239#1541#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
                 <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
-                <element signature="e#3553#3554#0" expanded="true" />
-                <element signature="e#3589#3590#0" expanded="true" />
                 <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
               </folding>
             </state>
@@ -50,66 +46,38 @@
       <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+            <state relative-caret-position="309">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Addition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Addition.java">
+        <entry file="file://$PROJECT_DIR$/Addition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Aufgabe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Aufgabe.java">
+        <entry file="file://$PROJECT_DIR$/Aufgabe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-              <folding>
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Summe.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Summe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-              <folding>
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zahl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Zahl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="330">
+              <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Berechenbar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Berechenbar.java">
+      <file leaf-file-name="Berechenbar.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Berechenbar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,8 +86,8 @@
       <file leaf-file-name="Listtest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Listtest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            <state relative-caret-position="585">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,12 +115,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/exercise16/Aufgabe.java" />
         <option value="$PROJECT_DIR$/src/SimpleDatabase.java" />
-        <option value="$PROJECT_DIR$/src/Listtest.java" />
-        <option value="$PROJECT_DIR$/src/List.java" />
         <option value="$PROJECT_DIR$/src/Summe.java" />
         <option value="$PROJECT_DIR$/src/Aufgabe.java" />
         <option value="$PROJECT_DIR$/src/Zahl.java" />
         <option value="$PROJECT_DIR$/Loesung Aufgabe 16.md" />
+        <option value="$PROJECT_DIR$/src/Listtest.java" />
+        <option value="$PROJECT_DIR$/src/List.java" />
       </list>
     </option>
   </component>
@@ -163,9 +131,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1260" />
-    <option name="height" value="736" />
+    <option name="width" value="638" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -199,7 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,8 +196,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,6 +220,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -497,6 +465,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -618,6 +587,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -695,14 +670,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1c00dcc-db49-491c-b393-14a9720c6510" name="Default" comment="" />
       <changelist id="7e2a9f04-2d71-47d8-9ce6-f04bd1438808" name="CommitLater" comment="" />
       <created>1479900093046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479900093046</updated>
       <workItem from="1480066284769" duration="7000" />
-      <workItem from="1480066297513" duration="5865000" />
+      <workItem from="1480066297513" duration="5948000" />
+      <workItem from="1480274502806" duration="2222000" />
+      <workItem from="1480316911431" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="updated IntelliJ IDE">
       <created>1480067208873</created>
@@ -732,43 +708,50 @@
       <option name="project" value="LOCAL" />
       <updated>1480087420649</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added excercise 16">
+      <created>1480261947234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1480261947235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5872000" />
+    <option name="totallyTimeSpent" value="8249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1260" height="736" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="638" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5486577" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -810,31 +793,26 @@
     <MESSAGE value="updated Uebung6 and Uebung5" />
     <MESSAGE value="updated Uebung6" />
     <MESSAGE value="removed excercise 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed excercise 16" />
+    <MESSAGE value="added excercise 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="added excercise 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/List.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/List.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Listtest.java</url>
           <line>33</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Listtest.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -845,14 +823,69 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SimpleDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
+            <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listtest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
+            <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addition.java" />
+    <entry file="file://$PROJECT_DIR$/src/Aufgabe.java" />
+    <entry file="file://$PROJECT_DIR$/src/Summe.java" />
+    <entry file="file://$PROJECT_DIR$/src/Zahl.java" />
+    <entry file="file://$PROJECT_DIR$/src/Berechenbar.java" />
+    <entry file="file://$PROJECT_DIR$/src/Listtest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#1239#1541#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
             <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
-            <element signature="e#3553#3554#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
             <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
           </folding>
         </state>
@@ -879,11 +912,7 @@
         <state relative-caret-position="1095">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#1239#1541#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
             <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
-            <element signature="e#3553#3554#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
             <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
           </folding>
         </state>
@@ -910,11 +939,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1239#1541#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
             <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
-            <element signature="e#3553#3554#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
             <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
           </folding>
         </state>
@@ -944,16 +969,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addition.java" />
+    <entry file="file://$PROJECT_DIR$/src/Berechenbar.java" />
+    <entry file="file://$PROJECT_DIR$/src/Aufgabe.java" />
+    <entry file="file://$PROJECT_DIR$/src/Zahl.java" />
+    <entry file="file://$PROJECT_DIR$/Loesung Aufgabe 16.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="615">
+            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Summe.java" />
     <entry file="file://$PROJECT_DIR$/src/SimpleDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="30">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
           <folding>
-            <element signature="e#1239#1541#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
             <element signature="class#SimpleDatabaseWindowListener#0;class#SimpleDatabase#0" expanded="false" />
-            <element signature="e#3553#3554#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
             <element signature="method#put#0;class#SimpleDatabase#0" expanded="false" />
           </folding>
         </state>
@@ -961,76 +997,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Listtest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+        <state relative-caret-position="309">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Berechenbar.java">
+    <entry file="file://$PROJECT_DIR$/Addition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aufgabe.java">
+    <entry file="file://$PROJECT_DIR$/Aufgabe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Zahl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="330">
+          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Loesung Aufgabe 16.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="615">
-            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Summe.java">
+    <entry file="file://$PROJECT_DIR$/Berechenbar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
