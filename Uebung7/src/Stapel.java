@@ -33,7 +33,6 @@ public class Stapel<T> {
      */
     public void legeDrauf(T element) {
         if (element != null) {
-            StackElement temp = top;
             top = new StackElement(element, top);
         }
     }
@@ -47,9 +46,8 @@ public class Stapel<T> {
     public T nehmeHerunter() throws StapelLeerException {
         if (!istLeer()) {
             StackElement temp = top;
-            if (temp.hasSucc()) {
-                top = temp.succ;
-
+            if (temp.hasSuccessor()) {
+                top = temp.successor;
             } else {
                 top = null;
             }
@@ -75,8 +73,8 @@ public class Stapel<T> {
         //------------------------------------------------
         // ---- Fields
         //------------------------------------------------
-        private T element;
-        private StackElement succ;
+        private final T element;
+        private final StackElement successor;
 
         //------------------------------------------------
         // ---- Constructor
@@ -85,12 +83,12 @@ public class Stapel<T> {
         /**
          * Constructs a stack-element with given element of specific type and another stackelement as successor.
          *
-         * @param element The element of specific type which will represent the stack element
-         * @param succ    The successor of the stack-element.
+         * @param element   The element of specific type which will represent the stack element
+         * @param successor The successor of the stack-element.
          */
-        public StackElement(T element, StackElement succ) {
+        public StackElement(T element, StackElement successor) {
             this.element = element;
-            this.succ = succ;
+            this.successor = successor;
         }
 
         //------------------------------------------------
@@ -102,8 +100,8 @@ public class Stapel<T> {
          *
          * @return true if stackelement has a successor.
          */
-        protected boolean hasSucc() {
-            return succ != null;
+        protected boolean hasSuccessor() {
+            return successor != null;
         }
     }
 }
