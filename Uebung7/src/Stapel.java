@@ -16,7 +16,7 @@ public class Stapel<T> {
     //------------------------------------------------
 
     /**
-     * Contructs a new stack with no elements in stack.
+     * Constructs a new stack with no elements in stack.
      */
     public Stapel() {
         top = null;
@@ -81,7 +81,7 @@ public class Stapel<T> {
         //------------------------------------------------
 
         /**
-         * Constructs a stack-element with given element of specific type and another stackelement as successor.
+         * Constructs a stack-element with given element of specific type and another stackElement as successor.
          *
          * @param element   The element of specific type which will represent the stack element
          * @param successor The successor of the stack-element.
@@ -96,9 +96,9 @@ public class Stapel<T> {
         //------------------------------------------------
 
         /**
-         * Returns true if stackelement has a successor.
+         * Returns true if stackElement has a successor.
          *
-         * @return true if stackelement has a successor.
+         * @return true if stackElement has a successor.
          */
         protected boolean hasSuccessor() {
             return successor != null;
