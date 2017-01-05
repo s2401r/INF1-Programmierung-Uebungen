@@ -1,8 +1,6 @@
 
 public class SequentialSolver extends Solver {
 
-    private boolean abbruch = true;
-
     public SequentialSolver(int oben, int unten, int links, int rechts, double epsilon, HitzePanel.DatenMatrix matrix, SolverObserver toBeRefreshed) {
         super(oben, unten, links, rechts, epsilon, matrix, toBeRefreshed);
     }
@@ -19,34 +17,42 @@ public class SequentialSolver extends Solver {
 
     public class SequentialSolverThread extends Thread {
 
-
         /**
          * Solver, to refresh UI
          */
         protected final Solver solver;
+        private boolean cancel = true;
 
         public SequentialSolverThread(Solver solver) {
             this.solver = solver;
         }
 
         public void run() {
+            //Wiederhole bis jede Berechnung innerhalb von epsilon liegt
             do {
-                abbruch = true;
+                cancel = true;
+                //Durchlaufen der Matrix in x-Richtung
                 for (int x = 0; x < matrix.getSize(); x++) {
+                    //Durchlaufen der Matrix in y-Richtung
                     for (int y = 0; y < matrix.getSize(); y++) {
+                        //Berechnen des Wertes
                         double result = solve(x, y);
+                        //Prüfen ob der Wert innerhalb von espilon liegt
                         double change = result - matrix.getValue(x, y);
                         if (change > epsilon) {
-                            abbruch = false;
+                            cancel = false;
                         }
+                        //Speichern des neuen Werts in der Matrix
                         matrix.setValue(result, x, y);
                     }
                 }
+                //Starten der nächsten Iteration
                 matrix.nextIteration();
-                //solver.finish();
-            }
-            while (!abbruch);
 
+                //Wenn ein Wert die Grenzen von epsilon überschritten hat wird wiederholt
+            } while (!cancel);
+
+            //Wenn alle Werte innerhalb der Grenzen liegen wird die Berechnung abgeschlossen
             solver.finish();
         }
 
@@ -55,7 +61,7 @@ public class SequentialSolver extends Solver {
                     getMatrixPointValue(x, y - 1) +
                     getMatrixPointValue(x + 1, y) +
                     getMatrixPointValue(x, y + 1);
-            result = result * 0.25;
+            result *= 0.25;
 
             return result;
         }
