@@ -1,9 +1,9 @@
 
-public class SequentialSolver extends Solver{
+public class SequentialSolver extends Solver {
 
-    private boolean abbruch = false;
+    private boolean abbruch = true;
 
-    public SequentialSolver(int oben, int unten, int links, int rechts, double epsilon, HitzePanel.DatenMatrix matrix, SolverObserver toBeRefreshed){
+    public SequentialSolver(int oben, int unten, int links, int rechts, double epsilon, HitzePanel.DatenMatrix matrix, SolverObserver toBeRefreshed) {
         super(oben, unten, links, rechts, epsilon, matrix, toBeRefreshed);
     }
 
@@ -13,20 +13,65 @@ public class SequentialSolver extends Solver{
      * In dieser Klasse ist das Problem sequentiell zu loesen.
      */
     public void solve() {
+        (new Thread(new SequentialSolverThread(this))).start();
+    }
 
-        // ACHTUNG! Beispielcode bitte loeschen!
-        for (int x = 0; x < matrix.getSize()/2; x++) {
-            for (int y = matrix.getSize()/2; y < matrix.getSize(); y++) {
-                matrix.setValue(100, x, y);
+
+    public class SequentialSolverThread extends Thread {
+
+
+        /**
+         * Solver, to refresh UI
+         */
+        protected final Solver solver;
+
+        public SequentialSolverThread(Solver solver) {
+            this.solver = solver;
+        }
+
+        public void run() {
+            do {
+                abbruch = true;
+                for (int x = 0; x < matrix.getSize(); x++) {
+                    for (int y = 0; y < matrix.getSize(); y++) {
+                        double result = solve(x, y);
+                        double change = result - matrix.getValue(x, y);
+                        if (change > epsilon) {
+                            abbruch = false;
+                        }
+                        matrix.setValue(result, x, y);
+                    }
+                }
+                matrix.nextIteration();
+                //solver.finish();
+            }
+            while (!abbruch);
+
+            solver.finish();
+        }
+
+        private double solve(int x, int y) {
+            double result = getMatrixPointValue(x - 1, y) +
+                    getMatrixPointValue(x, y - 1) +
+                    getMatrixPointValue(x + 1, y) +
+                    getMatrixPointValue(x, y + 1);
+            result = result * 0.25;
+
+            return result;
+        }
+
+        private double getMatrixPointValue(int x, int y) {
+            if (x < 0) {
+                return links;
+            } else if (x > matrix.getSize() - 1) {
+                return rechts;
+            } else if (y < 0) {
+                return oben;
+            } else if (y > matrix.getSize() - 1) {
+                return unten;
+            } else {
+                return matrix.getValue(x, y);
             }
         }
-        for (int x = matrix.getSize()/2; x < matrix.getSize(); x++) {
-            for (int y = 0; y < matrix.getSize()/2; y++) {
-                matrix.setValue(100, x, y);
-            }
-        }
-        matrix.nextIteration();
-        this.finish();
-        // ENDE! Beispielcode bitte loeschen!
     }
 }
