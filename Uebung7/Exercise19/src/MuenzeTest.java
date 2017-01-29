@@ -10,7 +10,7 @@ public class MuenzeTest {
 
         for (int i = 0; i < 100; i++) {
             try {
-                int randomInt = rnd.nextInt(500), valueInt = 0;
+                int randomInt = 121 /*rnd.nextInt(500)*/, valueInt = 0;
 
                 LinkedList<Muenze> result = Muenze.getMuenzen(randomInt);
 
