@@ -1,4 +1,4 @@
-module MatrixOperation where
+module MatrixOperationen where
   import Data.Array
   import Data.Tuple
   import Matrix
@@ -19,9 +19,8 @@ module MatrixOperation where
   -- ///////////////////////////////////////////////////////////////
   -- ///////////////////////////////////////////////////////////////
 
-  mult :: Matrix -> Matrix -> Matrix
+  --mult :: Matrix -> Matrix -> Matrix
   --mult a b = array ((1,1) , (snd (snd (bounds (a))),fst (snd (bounds (b)))))
-  mult a b = mapM_ (\y -> putStrLn (show [m!(x,y)|x<-[1..mx]])) [1..my] where ((_,_),(mx,my)) = bounds m
 
   --view (create 2 3 (^))     view (create 4 2 (+))
   --[1, 2]                    [2, 3, 4, 5]

@@ -97,12 +97,14 @@ public class SocialNetworkLösung {
     public int bestsolution = 6;
     public Person[] freundeskette;
 
-    public static void main(String[] args) {
-
-    }
-
-
     public Person[] getFreundschaftskette(Person start, Person ende) {
+        freundeskette = new Person[6];
+        bestsolution = 6;
+        if (findPerson(start, ende, 0) == true){
+            return freundeskette;
+        } else{
+            return null;
+        }
     }
 
     private boolean findPerson(Person start, Person ende, int depth) {
@@ -123,5 +125,12 @@ public class SocialNetworkLösung {
             }
         }
         return found;
+    }
+
+    public  class Test{
+        public Test(){
+            int test = bestsolution;
+        }
+
     }
 }
