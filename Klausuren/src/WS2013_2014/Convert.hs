@@ -1,4 +1,4 @@
-module Convert where
+odule Convert where
   import Data.Char
 
   convert :: Int -> Int -> String

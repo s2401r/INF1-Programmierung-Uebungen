@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Numbers {
+public class IntOperation {
 
     public static void main(String[] args) {
         System.out.println(mostFrequently(new int[]{1, 2, 3, 4, 6, 8, 5, 3}));

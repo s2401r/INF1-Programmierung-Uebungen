@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Addition.java" />
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Variable.java" />
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Konstante.java" />
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Multiplikation.java" />
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Belegung.java" />
+      <file url="file://$PROJECT_DIR$/src/WS2010_2011/Ausdruck.java" />
+    </excludeFromCompile>
+  </component>
+</project>

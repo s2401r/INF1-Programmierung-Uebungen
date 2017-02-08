@@ -1,7 +1,10 @@
- import java.util.ArrayList;
+## Beispiel Soziales Netzwerk
+
+```Java
+import java.util.ArrayList;
 
 public class SozialesNetzwerk {
-/*
+
     public int bestsolution = 6;
     public Person[] freundeskette;
 
@@ -37,5 +40,5 @@ public class SozialesNetzwerk {
         }
         return found;
     }
-    */
 }
+```
